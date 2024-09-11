@@ -21,4 +21,5 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('musics/', views.MusicList.as_view(), name='music-list'),
+     path('musics/<int:pk>/', views.MusicDetail.as_view(), name='music-detail'),
 ]
